@@ -10,3 +10,28 @@ body {
   font-family: "Norse Bold";
   src: url(assets/Norse-Bold.otf);
 }
+
+.image-sidebar {
+  height: 100vh;
+  width: 40%;
+  background-image: url("assets/background.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+.title-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Norse Bold";
+  font-size: 5.5rem;
+  color: white;
+}
+
+.odin-logo {
+  height: 100px;
+}

@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: "Arial", sans-serif;
 }
 
 @font-face {
@@ -17,6 +18,8 @@ body {
   background-image: url("assets/background.avif");
   background-position: center;
   background-size: cover;
+  position: relative;
+  text-align: center;
 }
 
 .title-banner {
@@ -34,4 +37,18 @@ body {
 
 .odin-logo {
   height: 100px;
+}
+
+a {
+  color: white;
+}
+
+.image-source {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: white;
+  bottom: 10px;
+  opacity: 0.8;
 }

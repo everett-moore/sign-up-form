@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", serif;
 }
 
 @font-face {
@@ -56,15 +56,50 @@ a {
   opacity: 0.8;
 }
 
+.sign-up-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #f5f5f5;
+}
+
 .call-to-action {
   font-size: 1.3rem;
   font-weight: bold;
+  max-width: 760px;
+  padding: 5em 2em 3em;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+}
+
+.form {
+  flex-grow: 1;
+  padding: 2em 3em;
+  box-shadow: hsl(0, 0%, 80%) 0px 5px 5px;
+}
+
+.form-header {
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+}
+
+.col + .col {
+  align-self: end;
+  margin-left: 50px;
 }
 
 label {
   display: flex;
+  color: #2c2c2c;
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3px;
 }
 
 input {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }

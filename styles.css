@@ -12,6 +12,10 @@ body {
   src: url(assets/Norse-Bold.otf);
 }
 
+.flex {
+  display: flex;
+}
+
 .image-sidebar {
   height: 100vh;
   width: 40%;
@@ -23,7 +27,6 @@ body {
 }
 
 .title-banner {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -51,4 +54,15 @@ a {
   color: white;
   bottom: 10px;
   opacity: 0.8;
+}
+
+.call-to-action {
+  max-width: 730px;
+  padding: 2em;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+label {
+  display: flex;
 }

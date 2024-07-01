@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -64,10 +66,11 @@ a {
 }
 
 .call-to-action {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  max-width: 760px;
-  padding: 5em 2em 3em;
+  align-self: flex-start;
+  max-width: 710px;
+  padding: 3rem;
 }
 
 .form-wrapper {
@@ -76,18 +79,18 @@ a {
 
 .form {
   flex-grow: 1;
-  padding: 2em 3em;
+  gap: 60px;
+  padding: 3rem;
   box-shadow: hsl(0, 0%, 80%) 0px 5px 5px;
 }
 
 .form-header {
   margin-bottom: 1em;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .col + .col {
-  align-self: end;
-  margin-left: 50px;
+  margin-top: 3rem;
 }
 
 label {
@@ -101,5 +104,28 @@ label {
 }
 
 input {
+  outline: none;
+  padding: 3px 5px;
+  border-radius: 2px;
+  border: 1px solid #e5e7eb;
   margin-bottom: 20px;
+}
+
+input:focus {
+  border: 1.3px solid #7373ff;
+  box-shadow: 1px 1px 1px hsl(0, 0%, 80%);
+}
+
+input:invalid {
+  border: 1.3px solid hsl(0, 83%, 59%);
+  box-shadow: 1px 1px 1px hsl(0, 0%, 80%);
+}
+
+#password {
+  margin-bottom: 0;
+}
+
+.invalid-text {
+  color: hsl(0, 83%, 59%);
+  font-size: 0.6rem;
 }
